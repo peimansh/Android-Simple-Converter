@@ -7,7 +7,7 @@
     tools:context="com.example.tmp_sda_1130.pemiconverter.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:layout_editor_absoluteY="0dp"
@@ -18,11 +18,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Meters"
+            android:inputType="numberDecimal"
             android:selectAllOnFocus="false" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="Click to Convert"
             android:id="@+id/conversion"
             android:textAllCaps="false"
