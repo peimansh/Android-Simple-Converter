@@ -31,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
             Toast t1 = Toast.makeText(this, "You should enter a number" ,Toast.LENGTH_LONG);
             t1.setGravity(Gravity.TOP| Gravity.RIGHT, 25, 200);
             t1.show();
+            EditText editText2 = (EditText)findViewById(R.id.feet);
+            editText2.setText("0");
+            EditText editText3 = (EditText)findViewById(R.id.inch);
+            editText3.setText("0");
+            EditText editText4 = (EditText)findViewById(R.id.yard);
+            editText4.setText("0");
             return;
         }
 
