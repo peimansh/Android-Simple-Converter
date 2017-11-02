@@ -20,16 +20,18 @@ public class MainActivity extends AppCompatActivity {
         EditText editText1 = (EditText)findViewById(R.id.meter);
         String temp = editText1.getText().toString();
         String tmp = null;
-        double temp1 = Double.parseDouble(editText1.getText().toString());
+        double temp1 = 0;
 
         try {
             if (view.getId() == R.id.conversion) {
-                tmp = editText1.getText().toString() ;
+                temp1 = Double.parseDouble(editText1.getText().toString());
             }
         }
         catch (NumberFormatException ex) {
             Toast t1 = Toast.makeText(this, "You should enter a number" ,Toast.LENGTH_LONG);
+            t1.setGravity(Gravity.TOP| Gravity.RIGHT, 25, 200);
             t1.show();
+            return;
         }
 
         double feet = temp1*(3.28084);
