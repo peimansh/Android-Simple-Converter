@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editText4 = (EditText)findViewById(R.id.yard);
         editText4.setText(yard+" Yards.");
         Toast toastfeet = Toast.makeText(this,"conversion done !",Toast.LENGTH_SHORT);
-        toastfeet.setGravity(Gravity.TOP| Gravity.RIGHT, 25, 200);
+        toastfeet.setGravity(Gravity.TOP| Gravity.RIGHT, 25, 450);
         toastfeet.show();
 
     }
