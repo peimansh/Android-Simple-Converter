@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
         double inch = feet*12;
         double yard = feet/3;
         EditText editText2 = (EditText)findViewById(R.id.feet);
-        editText2.setText(feet+" Feet. Done !");
+        editText2.setText(feet+" Feet.");
         EditText editText3 = (EditText)findViewById(R.id.inch);
-        editText3.setText(inch+" Inches. Done !");
+        editText3.setText(inch+" Inches.");
         EditText editText4 = (EditText)findViewById(R.id.yard);
-        editText4.setText(yard+" Yards. Done !");
+        editText4.setText(yard+" Yards.");
         Toast toastfeet = Toast.makeText(this,"conversion done !",Toast.LENGTH_SHORT);
         toastfeet.setGravity(Gravity.TOP| Gravity.RIGHT, 25, 200);
         toastfeet.show();
