@@ -50,15 +50,6 @@
             android:id="@+id/yard"
             />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Something !"
-            android:textAllCaps="false"
-            android:id="@+id/someth"
-            android:onClick="ShowST"/>
-
-
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
