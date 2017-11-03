@@ -19,12 +19,18 @@
             android:layout_height="wrap_content"
             android:hint="Meters"
             android:inputType="numberDecimal"
-            android:selectAllOnFocus="false" />
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/convsel"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Click to Convert"
+            android:text="@string/butt_msg"
             android:id="@+id/conversion"
             android:textAllCaps="false"
             android:onClick="Convert"
@@ -33,24 +39,25 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Feet"
+            android:hint="Result"
             android:id="@+id/feet"
             />
-
+        <!--
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Inches"
             android:id="@+id/inch"
             />
-
+        -->
+        <!--
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Yards"
             android:id="@+id/yard"
             />
-
+        -->
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

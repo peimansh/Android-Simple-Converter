@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PemiConverter</string>
+    <string name="butt_msg">Convert</string>
 </resources>
