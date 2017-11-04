@@ -17,16 +17,28 @@
             android:id="@+id/meter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Meters"
+            android:hint="Enter Number"
             android:inputType="numberDecimal"
             />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/from"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To         "/>
 
         <Spinner
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/convsel"
-            />
-
+            android:id="@+id/to"
+        />
+        </LinearLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
