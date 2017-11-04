@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         spinner = (Spinner)findViewById(R.id.from);
         //spinner = (Spinner)myView.findViewById(R.id.convsel);
         adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, controller.getAll1());
-        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner2 = (Spinner)findViewById(R.id.to);
         adapter2 = new ArrayAdapter(this, android.R.layout.simple_spinner_item, controller.getAll2());
-        adapter2.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(adapter2);
     }
 
@@ -65,6 +65,16 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (value1.equals("Meter") && value2.equals("Yard")) {
                 editText2.setText(yard+" Yards");
+            }
+            else if (value1.equals("Meter") && value2.equals("Mile")) {
+                editText2.setText(mile+" Miles");
+            }
+            else if (value1.equals("Meter") && value2.equals("Meter")) {
+                controller.remove2(4);
+                adapter2.notifyDataSetChanged();
+            }
+            else if (value1.equals("Meter") && value2.equals("Mile")) {
+                editText2.setText(mile+" Miles");
             }
             else if (value1.equals("Meter") && value2.equals("Mile")) {
                 editText2.setText(mile+" Miles");
