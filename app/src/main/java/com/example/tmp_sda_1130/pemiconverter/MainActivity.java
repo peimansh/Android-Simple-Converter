@@ -69,10 +69,7 @@ public class MainActivity extends AppCompatActivity {
             else if (value1.equals("Meter") && value2.equals("Mile")) {
                 editText2.setText(mile+" Miles");
             }
-            else if (value1.equals("Meter") && value2.equals("Meter")) {
-                controller.remove2(4);
-                adapter2.notifyDataSetChanged();
-            }
+
             else if (value1.equals("Meter") && value2.equals("Mile")) {
                 editText2.setText(mile+" Miles");
             }
